@@ -1,7 +1,8 @@
 import java.io.*;
 class HelloWorld {
     public static void main(String[] args) {
-        int n = 23;
+        System.out.print("Enter a number (n): ");
+        int n = scanner.nextInt();
         int l = n / 2;
         int r;
         if (n % 2 == 0) {
@@ -9,7 +10,7 @@ class HelloWorld {
         } else {
             r = n / 2 + 1;
         }
-        System.out.println(find(n, l, r));
+        System.out.println("The given number is sum of two prime number : " + find(n, l, r));
     }
 
     public static boolean isPrime(int n) {
